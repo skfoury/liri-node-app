@@ -1,0 +1,21 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <script> 
+var spotify = new Spotify({
+  id: "b6fe5fa1bfd24f70b38d7e3d7ede7766",
+  secret: "c1d24796e85f4ebca665e7f45fb13b16"
+});
+ 
+spotify
+  .search({ type: 'track', query: 'i love it' , limit: 1 })
+  .then(function(response) {
+    console.log(response);
+  })
+  .catch(function(err) {
+    console.log(err);
+  });
+    </script>
+  </body>
+</html>
